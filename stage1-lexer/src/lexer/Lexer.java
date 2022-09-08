@@ -78,7 +78,7 @@ public class Lexer {
 		}
 
 		if (Character.isDigit(peek)) {
-			int v = 0;
+			double v = 0;
 			do {
 				v = (10 * v) + Character.digit(peek, 10);
 				readch();
@@ -92,7 +92,7 @@ public class Lexer {
 		if (Character.isLetter(peek)) {
 			StringBuffer b = new StringBuffer();
 			do {
-				b.append(Character.toLowerCase(peek));
+				b.append(Character.toUpperCase(peek));
 				readch();
 			} while ( Character.isLetterOrDigit(peek) ) ;
 			String s = b.toString();
