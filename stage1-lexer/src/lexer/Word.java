@@ -18,6 +18,13 @@ public class Word extends Token {
 
 	public static final Word
 		Neq = new Word("<>", Tag.NEQ),
-		Leq = new Word( "<=", Tag.LEQ), Geq = new Word(">=", Tag.GEQ),
-		True = new Word("#t",  Tag.TRUE), False = new Word("#f", Tag.FALSE);
+		Leq = new Word( "<=", Tag.LEQ),
+		Geq = new Word(">=", Tag.GEQ),
+		True = new Word("#t",  Tag.TRUE),
+		False = new Word("#f", Tag.FALSE),
+
+		OR = new Word("OR",Tag.OR),
+		AND = new Word("AND",Tag.AND),
+		MOD = new Word("MOD",Tag.MOD);
+
 }
