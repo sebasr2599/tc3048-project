@@ -2,7 +2,7 @@
 # Analysis and Design of Advanced Algorithms (TC2038)
 
 ```
-program ::= <statement-sequence>
+<program> ::= <statement-sequence>
 
 <statement-sequence> ::= <statement> <statement-sequence>
 <statement-sequence> ::= ' '
@@ -19,12 +19,12 @@ program ::= <statement-sequence>
   <text-statement>
   
 <declaration-statement> ::=
-  VAR <identifier> <identifier-list> ';'
+  VAR <identifier> <identifier-list>
   
 <identifier-list> ::= ',' <identifier> <identifier-list>
 <identifier-list> ::= ' '
 
-<assigment-statement> ::= MAKE <identifier> <expression>
+<assigment-statement> ::= <identifier> ':''=' <expression>
 
 <movement-statement> ::=
       <forward-statement> |
